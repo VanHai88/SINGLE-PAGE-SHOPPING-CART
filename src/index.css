@@ -1,0 +1,558 @@
+*, ::before, ::after{
+  padding: 0;
+  margin: 0;
+  font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif
+}
+
+/* =========== Start - container ============== */
+
+.logo{
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* ======== Start - product_size ========== */
+
+.product_size{
+  width: 18%;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.product_size .size_list span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #00000029;
+    transition: .4s;
+}
+
+.product_size .size_list span:hover{
+  box-shadow: 0px 0px 0px 1px #000;
+}
+
+.product_size .size_list span.active{
+  background-color: #000;
+  color: #fff;
+}
+/* ======== End - product_size ========== */
+
+/* ======== Start - product_show ========== */
+
+.product_show{
+  width: 70%;
+  margin-top: 30px;
+}
+
+.header_product{
+  display: flex;
+    justify-content: space-between;
+}
+
+.header_product select{
+  padding: 6px 0;
+    outline: none;
+    margin-left: 10px;
+}
+
+.product_info{
+  position: relative;
+  width: 210px;
+  padding-top: 40px;
+  margin: 0 10px;
+}
+
+.product_info .tagShip{
+  color: #fff;
+  background-color: black;
+  padding: 5px;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+}
+
+.product_info img{
+  width: 100%;
+}
+
+.block_product{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_infor{
+  text-align: center;
+}
+
+.product_info h4{
+  padding: 15px 0;
+}
+
+.product_info .line{
+  width: 30px;
+    border-top: 2px solid #e85f0e;
+    display: block;
+    margin: 0 auto;
+}
+
+.product_info .content_infor .price{
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.product_info .content_infor .price span{
+  font-size: 13px;
+}
+
+.product_info .content_infor .price p:last-child{
+  color: #00000094;
+}
+
+.product_info button{
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  font-size: 16px;
+}
+
+/* ======== End - product_show ========== */
+
+/* ======== Start -  product_cart ========== */
+
+.product_cart{
+  width: 5%;
+  height: 500px;
+  text-align: right;
+}
+
+.show_list_cart{
+  position: relative;
+}
+
+#block_list_cart{
+  display: none;
+}
+
+.show_list_cart span{
+  position: absolute;
+    background-color: #e08528;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 29px;
+    top: 41px;
+    right: 0;
+    line-height: 36px;
+    text-align: center;
+}
+
+.product_cart img{
+  width: 60px;
+  cursor: pointer;
+}
+
+.list_cart{
+  position: fixed;
+    width: 35%;
+    right: 0;
+    text-align: left;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    height: 658px;
+    overflow: auto;
+}
+
+.icon_cart{
+  text-align: center;
+  display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    position: relative;
+}
+
+.icon_cart .count_cart{
+  position: absolute;
+    background-color: #e08528;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 29px;
+    top: 74px;
+    right: 204px;
+    line-height: 36px;
+}
+
+.icon_cart span{
+  line-height: 60px;
+    margin-left: 15px;
+}
+
+.cart_info{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 21px;
+  padding-top: 15px;
+  margin-top: 35px;
+  border-top: 1px solid #272727;
+}
+
+.cart_info:last-child{
+  margin-bottom: 200px;
+}
+
+.cart_info .clear{
+  width: 25px;
+  height: 25px;
+  opacity: .4;
+  transition: .5s;
+}
+
+.cart_info:hover .clear{
+  opacity: 1;
+}
+
+.cart_info .cart_price{
+  margin: auto 0;
+  color: #e08528;
+}
+
+.cart_content{
+  width: 58%;
+  margin: auto 0;
+}
+
+.cart_content P{
+  color: #6d6d6d;
+}
+
+.cart_content p span{
+  border-right: 1px solid;
+    height: 13px;
+    display: inline-block;
+    line-height: 15px;
+    padding-right: 5px;
+}
+
+.cancel{
+  position: fixed;
+  top: 0;
+  right: 35%;
+  background-color: black;
+}
+
+.cancel img{
+  width: 30px;
+    padding: 10px;
+}
+
+.checkout{
+  position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    padding: 35px 0;
+    background-color: #272727;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.checkout .subtotal{
+  color: #6d6d6d;
+  display: flex;
+    justify-content: space-around;
+}
+
+.subtotal .price_cart{
+  color: #e08528;
+  padding-bottom: 10px;
+}
+
+.subtotal_price p:last-child{
+  font-size: 13px;
+}
+
+.checkout button{
+  width: 397px;
+  height: 50px;
+  background-color: #000;
+  border: 0;
+  outline: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  margin: 0px 8%;
+  margin-top: 30px;
+}
+
+button{
+  cursor: pointer;
+}
+/* ======== End -  product_cart ========== */
+
+/* =========== End - container ============== */
+
+/* =========== Start - Bill ================  */
+
+.product_bill{
+  display: none;
+  padding: 20px 60px;
+  background-color: #f4f4f4;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 100;
+  border: 3px solid #00000026;
+    border-radius: 10px;
+}
+
+.product_bill i:before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* ======= Start - bill_list =========== */
+
+.product_bill .bill_list{
+  width: 65%;
+  
+}
+
+.bill_list .bill_title{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 15px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.product_bill .list_product{
+  height: 800px;
+    overflow: auto;
+}
+
+.bill_list .bill_title p:nth-child(1){
+  width: 60%;
+  margin-right: 20px;
+}
+
+.bill_list .bill_title p:nth-child(2){
+  width: 30%;
+    text-align: left;
+}
+
+.bill_list .bill_title p:nth-child(3){
+  width: 10%;
+  text-align: left;
+}
+
+.bill_list .bill-item{
+  padding: 10px;
+    margin: 15px 15px 0px 15px;
+    background-color: #fff;
+}
+
+.bill-item .bill_delivery>p{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.bill-item .bill_delivery .delivery_standard{
+  border: 1px solid #0094b6;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    line-height: 26px;
+    display: flex;
+    font-size: 14px;
+}
+
+.delivery_standard i{
+  margin-right: 10px;
+  line-height: 25px;
+  color: #0094b6;
+}
+
+.bill-item .bill_product{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.bill_product .item_product{
+  display: flex;
+  width: 60%;
+  margin-right: 20px;
+}
+
+.item_product .product_description{
+  margin-left: 10px;
+}
+
+.item_product .product_description p:nth-child(2){
+  margin-top: 10px;
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
+.bill_product .product_price{
+  width: 30%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.bill_product .product_price p:nth-child(1){
+  color: #e85f0e;
+  font-size: 18px;
+}
+
+.bill_product .product_price p:nth-child(2){
+  text-decoration: line-through;
+}
+
+.bill_product .product_price i{
+  cursor: pointer;
+}
+
+
+.bill_product .product_quantity{
+  width: 10%;
+    text-align: left;
+}
+
+.bill_product .item_product img{
+  width: 100px;
+    height: 140px;
+}
+
+/* ======= End - bill_list =========== */
+
+/* ======= Start - shipping_dilling = */
+
+.product_bill .shipping_dilling{
+  width: 35%;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  height: 630px;
+}
+
+.shipping_dilling button{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #f57224;
+  padding: 17px 0;
+  margin: auto;
+  width: 100%;
+}
+
+.shipping_dilling h4{
+  margin-top: 15px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.shipping_dilling .info_shipping .info_item{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.info_shipping .info_item i{
+  color: #0094b6;
+  margin-right: 10px;
+}
+
+.info_shipping .info_item p:nth-child(2){
+  line-height: 25px;
+}
+
+.info_shipping .info_item .edit_info{
+  color: #0094b6;
+  text-align: right;
+}
+
+.info_shipping .info_item p span:nth-child(1){
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.info_shipping .info_item p span:nth-child(3){
+  background-color: #0094b6;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.shipping_dilling .order_summary .summary_item{
+  display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.order_summary .summary_item p:nth-child(1){
+  color: #000000c7;
+}
+
+.order_summary .summary_item p:nth-child(2){
+  font-size: 18px;
+}
+
+.shipping_dilling .voucher{
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping_dilling .voucher input{
+  width: 68%;
+  padding-left: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.shipping_dilling .voucher button{
+  width: 30%;
+  background-color: #0094b6;
+}
+
+.shipping_dilling .total_bill .total{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.total_bill .total p:nth-child(2){
+  font-size: 18px;
+  color: #f57224;
+}
+
+.total_bill .vat{
+  text-align: right;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+/* ======= End -  shipping_dilling == */
+
+/* =========== End - Bill ================  */
